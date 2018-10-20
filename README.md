@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# nasa_hackathon
+Nasa Hackathon app
+>>>>>>> 962ce5047a5bffbf1dfec1e9280102ebee01d92a

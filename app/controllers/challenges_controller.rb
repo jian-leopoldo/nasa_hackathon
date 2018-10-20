@@ -25,6 +25,7 @@ class ChallengesController < ApplicationController
   # POST /challenges.json
   def create
     @challenge = Challenge.new(challenge_params)
+    @challenge.send_image(params[:challenge]['challenge_image'].tempfile.path)
 
     respond_to do |format|
       if @challenge.save
@@ -69,6 +70,6 @@ class ChallengesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def challenge_params
-      params.fetch(:challenge, {})
+      params.require(:challenge).permit(:challenge_image)
     end
 end
